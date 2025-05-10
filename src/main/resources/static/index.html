@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL查询工具</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SQL查询工具</h1>
+        <div class="query-section">
+            <div class="input-group">
+                <textarea id="sqlInput" placeholder="请输入查询语句..."></textarea>
+            </div>
+            <div class="button-group">
+                <button id="toggleInputMode">切换输入模式</button>
+                <button id="executeBtn">执行查询</button>
+            </div>
+            <div class="error-message"></div>
+            <div class="loading">正在查询...</div>
+        </div>
+        <div class="result-section">
+            <table id="resultTable">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
